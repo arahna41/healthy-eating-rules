@@ -1,8 +1,8 @@
 header {background: #669900;
 	text-align: center;
 	height: 150px;
-	margin: 20px;
-	padding: 40px;
+	margin: 20px 5px;
+	padding: auto;
 	border-style: ridge;
 	border-width: 10px;
 	border-color: #ccc500
@@ -13,4 +13,44 @@ h1 {font-family: Arial;
 		}
 body {
 	background: #e4f0b6
+}
+.f {
+	background:none
+}
+.img {
+	text-align: center;
+	background: none
+}
+h3 {
+	font-size: 30px;
+	color: red;
+	margin: 25px
+	}
+ol {
+	font-size: 20px;
+	}
+h2 {
+	font-size:180%;
+	color: #209c02;
+	margin: 25px
+}
+.text {
+	background: #fcf8e6;
+	font-size: 20px;
+	color: #8a6c03;
+	text-align: justify;
+	border: dashed 3px orange;
+	margin: 20px;
+   padding: 15px
+}
+#anchor {
+	background: #f7cebc;
+	border: outset 3px #f75814;
+	font-family: Arial;
+}
+footer{background: #03998f;
+border: groove 3px #005a6e;
+padding: 10px;
+margin: 20px 5 px;
+font-size: 18px
 }
