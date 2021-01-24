@@ -1,4 +1,5 @@
-header {background: #669900;
+header {
+	background: #669900;
 	text-align: center;
 	height: 150px;
 	margin: 20px 5px;
@@ -6,11 +7,12 @@ header {background: #669900;
 	border-style: ridge;
 	border-width: 10px;
 	border-color: #ccc500
-	}
-h1 {font-family: Arial;
+}
+h1 {
+	font-family: Arial;
 	font-size: 70px;
 	color: #e7eb1e
-		}
+}
 body {
 	background: #e4f0b6
 }
@@ -25,10 +27,10 @@ h3 {
 	font-size: 30px;
 	color: red;
 	margin: 25px
-	}
+}
 ol {
 	font-size: 20px;
-	}
+}
 h2 {
 	font-size:180%;
 	color: #209c02;
@@ -48,9 +50,10 @@ h2 {
 	border: outset 3px #f75814;
 	font-family: Arial;
 }
-footer{background: #03998f;
-border: groove 3px #005a6e;
-padding: 10px;
-margin: 20px 5px;
-font-size: 18px
+footer{
+	background: #03998f;
+	border: groove 3px #005a6e;
+	padding: 10px;
+	margin: 20px 5px;
+	font-size: 18px
 }
