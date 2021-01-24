@@ -2,7 +2,7 @@ header {background: #669900;
 	text-align: center;
 	height: 150px;
 	margin: 20px 5px;
-	padding: auto;
+	padding: 5px;
 	border-style: ridge;
 	border-width: 10px;
 	border-color: #ccc500
@@ -51,6 +51,6 @@ h2 {
 footer{background: #03998f;
 border: groove 3px #005a6e;
 padding: 10px;
-margin: 20px 5 px;
+margin: 20px 5px;
 font-size: 18px
 }
