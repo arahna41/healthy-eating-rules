@@ -1,197 +1,280 @@
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
+/* css-reset */
+	html, body, div, span, applet, object, iframe,
+	h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+	a, abbr, acronym, address, big, cite, code,
+	del, dfn, em, img, ins, kbd, q, s, samp,
+	small, strike, strong, sub, sup, tt, var,
+	b, u, i, center,
+	dl, dt, dd, ol, ul, li,
+	fieldset, form, label, legend,
+	table, caption, tbody, tfoot, thead, tr, th, td,
+	article, aside, canvas, details, embed, 
+	figure, figcaption, footer, header, hgroup, 
+	menu, nav, output, ruby, section, summary,
+	time, mark, audio, video {
+		margin: 0;
+		padding: 0;
+		border: 0;
+		font-size: 100%;
+		font: inherit;
+		vertical-align: baseline;
+	}
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-body{
-	background: #e4f0b6;
-	line-height: 1.15;
-}
-header{
-	background-color: #669900;
-	text-align: center;
-	min-height: 120px;
-	margin: 20px 5px;
-	padding: 5px;
-	border-style: ridge;
-	border-width: 10px;
-	border-color: #ccc500;
-	position: relative;
-}
-h1{
-	font-family: Arial;
-	font-size: 70px;
-	color: #e7eb1e;
-}
-.navigation {
-	font-size: 0;
-}
-.navigation li{
-	display: inline-block;
-	font-size: 14px;
-	margin: 3px;
-	border: outset 3px #f2ad46;
-	background-color: #f2d646
-}
-.navigation li>a {
-	padding: 5px;
-}
-.block-fixed {
-	position: fixed;
-	width: 91px;
-	height: 130px;
-	background-color: #669900;
-	border-style: ridge;
-	border-width: 10px;
-	border-color: #ccc500;
-	left: 0;
-	top: 0;
-	margin: 20px 5px;
-	z-index: 5; 
-}
-main {
-	background-image: url(../images/body.jpg);
-	background-repeat: no-repeat;
-	background-position: center;
-	background-attachment: fixed;
-	background-size: 100%;
-}
-div>p::first-letter {
-	font-size: 200%;
-}
-.container {
-	position: relative;
-	font-size: 0;
-	width: 1000px;
-	margin: 0 auto;
-}
-.inscription {
-	position: absolute;
-	background-color: #f4f739fd;
-	opacity: 0.6;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	height: 50px;
-	font-size: 20px;
-	text-align: center;
-}
-.container>img {
-	width: 100%;
-}
-.content {
-	background-color: #fcca9a;
-	opacity: 0.6;
-	border: double;
-	width: 700px;
-	margin: 20px 20px 20px 116px;
-	padding: 15px;
-}
-h3{
-	font-size: 30px;
-	color: red;
-	margin: 25px 25px 25px 176px;
-}
-ol{
-	font-size: 20px;
-	margin-left: 136px;
-}
-h2{
-	font-size:180%;
-	color: #209c02;
-	margin-left: 25px;
-	margin-bottom: 10px;
-}
-section{
-	background: #fccfe0;
-	font-size: 20px;
-	color: #8a6c03;
-	text-align: justify;
-	border: dashed 3px #f75490;
-	margin: 20px;
-	margin-left: 116px;
-	padding: 15px;
-}
-.text {
-	text-align: center;
-	background: #95dff5;
-	border: inset 5px #2773e5;
-	font-size: 27px;
-	color: #f06311;
-	margin: 20px;
-	margin-left: 116px;
-	padding: 15px;
-}
-.container2 {
-	position: relative;
-	font-size: 0;
-	width: 700px;
-	margin: 0 auto;
-}
-.inscription2 {
-	position: absolute;
-	background-color: #7ef261;
-	opacity: 0.6;
-	top: 50%;
-	left: 100px;
-	right: 100px;
-	height: 50px;
-	font-size: 25px;
-	text-align: center;
-}
-.container2>img {
-	width: 100%;
-}
-.anchor{
-	text-align: center;
-	margin: 25px;
-	padding: 5px;
-	background: #f7cebc;
-	border: outset 3px #f75814;
-	font-family: Arial;
-}
-footer{
-	background: #03998f;
-	border: groove 3px #005a6e;
-	padding: 10px;
-	margin: 20px 5px;
-	font-size: 18px;
-}
+	footer, header, hgroup, menu, nav, section {
+		display: block;
+	}
+	body {
+		line-height: 1;
+	}
+	ol, ul {
+		list-style: none;
+	}
+	blockquote, q {
+		quotes: none;
+	}
+	blockquote:before, blockquote:after,
+	q:before, q:after {
+		content: '';
+		content: none;
+	}
+	table {
+		border-collapse: collapse;
+		border-spacing: 0;
+	}
+/* body */
+	body{
+		background: #e4f0b6;
+		line-height: 1.15;
+	}
+/* header */
+	header{
+		background-color: #669900;
+		text-align: center;
+		min-height: 120px;
+		margin: 20px 5px;
+		padding: 5px;
+		border-style: ridge;
+		border-width: 10px;
+		border-color: #ccc500;
+		position: relative;
+	}
+	h1{
+		font-family: Arial;
+		font-size: 70px;
+		color: #e7eb1e;
+	}
+	.navigation {
+		font-size: 0;
+	}
+	.navigation li{
+		display: inline-block;
+		font-size: 14px;
+		margin: 3px;
+		border: outset 3px #f2ad46;
+		background-color: #f2d646
+	}
+	.navigation li>a {
+		padding: 5px;
+	}
+	.block-fixed {
+		position: fixed;
+		width: 91px;
+		height: 130px;
+		background-color: #669900;
+		border-style: ridge;
+		border-width: 10px;
+		border-color: #ccc500;
+		left: 0;
+		top: 0;
+		margin: 20px 5px;
+		z-index: 5; 
+	}
+/* autorization */
+	form.autorization {
+		font-size: 20px;
+		background-color: #d6d5b0;
+		position: absolute;
+		right: 28px;
+		bottom: 18px;
+		padding: 5px;
+		border: solid 2px #943a06;
+	}
+	form>a {
+		color: #f26427;
+	}
+	form.input {
+		background-color: #93d130;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		max-width: 33%;
+		min-height: 33%;
+		padding: 5px;
+		border: solid 2px #943a06;
+	}
+	form.input > div > p {
+		font-size: 110%;
+		margin: 7px;
+		padding: 3px;
+		color: #543b0a;
+		font-weight: 700;
+	}
+	form.input > div > p::first-letter {
+		font-size: 100%;
+	}
+	.username > input {
+		border: solid 3px #0ec420;
+		height: 25px;
+	}
+	.username > input:hover {
+		border: solid 3px #db3712;
+		transition: all 1s ease; 
+		background-color: #f2e0bd;
+	}
+	.textarea > textarea {
+		border: solid 3px #0ec420;
+		max-width: 350px;
+		max-height: 120px;
+	}
+	.textarea > textarea:hover {
+		border: solid 3px #db3712;
+		transition: all 1s ease;
+		background-color: #f2c1bd;
+	}
+	.textarea > textarea:focus {
+		border: solid 3px #1ec5eb;
+		background-color: #d0f5f5;
+	}
+	.select > select {
+		
+	}
+	.select > button {
+		font-weight: 700;
+		background-color: #f0a57a;
+		color: #057a3c;
+		border: dotted 2px #bd0d0d;
+	}
+	.select > button:hover {
+		background-color: #f07ac1;
+		transition: all 1s ease;
+	}
+/* main */
+	main {
+		background-image: url(../images/body.jpg);
+		background-repeat: no-repeat;
+		background-position: center;
+		background-attachment: fixed;
+		background-size: 100%;
+	}
+/* intro */
+	div>p::first-letter {
+		font-size: 200%;
+	}
+/* img_intro */
+	.container {
+		position: relative;
+		font-size: 0;
+		width: 1000px;
+		margin: 0 auto;
+	}
+	.inscription {
+		position: absolute;
+		background-color: #f4f739fd;
+		opacity: 0.6;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		height: 50px;
+		font-size: 20px;
+		text-align: center;
+	}
+	.container>img {
+		width: 100%;
+	}
+/* content */
+	.content {
+		background-color: #fcca9a;
+		opacity: 0.6;
+		border: double;
+		width: 700px;
+		margin: 20px 20px 20px 116px;
+		padding: 15px;
+	}
+	h3{
+		font-size: 30px;
+		color: red;
+		margin: 25px 25px 25px 176px;
+	}
+	ol{
+		font-size: 20px;
+		margin-left: 136px;
+		list-style-type: decimal;
+	}
+/* text */
+	h2{
+		font-size:180%;
+		color: #209c02;
+		margin-left: 25px;
+		margin-bottom: 10px;
+	}
+	section{
+		background: #fccfe0;
+		font-size: 20px;
+		color: #8a6c03;
+		text-align: justify;
+		border: dashed 3px #f75490;
+		margin: 20px;
+		margin-left: 116px;
+		padding: 15px;
+	}
+/* idea */
+	.text {
+		text-align: center;
+		background: #95dff5;
+		border: inset 5px #2773e5;
+		font-size: 27px;
+		color: #f06311;
+		margin: 20px;
+		margin-left: 116px;
+		padding: 15px;
+	}
+/* final_img */
+	.container2 {
+		position: relative;
+		font-size: 0;
+		width: 700px;
+		margin: 0 auto;
+	}
+	.inscription2 {
+		position: absolute;
+		background-color: #7ef261;
+		opacity: 0.6;
+		top: 50%;
+		left: 100px;
+		right: 100px;
+		height: 50px;
+		font-size: 25px;
+		text-align: center;
+	}
+	.container2>img {
+		width: 100%;
+	}
+/* anchor */
+	.anchor{
+		text-align: center;
+		margin: 25px;
+		padding: 5px;
+		background: #f7cebc;
+		border: outset 3px #f75814;
+		font-family: Arial;
+	}
+/* footer */
+	footer{
+		background: #03998f;
+		border: groove 3px #005a6e;
+		padding: 10px;
+		margin: 20px 5px;
+		font-size: 18px;
+	}
