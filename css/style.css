@@ -90,7 +90,7 @@ article, aside, details, figcaption, figure,
 		margin: 20px 5px;
 		z-index: 5; 
 	}
-/* autorization */
+/* autorization на главной странице*/
 	form.autorization {
 		font-size: 20px;
 		background-color: #d6d5b0;
@@ -103,23 +103,32 @@ article, aside, details, figcaption, figure,
 	form>a {
 		color: #f26427;
 	}
+/* autorization отдельная страница */
 	form.input {
 		background-color: #93d130;
+		margin: 20% auto;
+		padding: 15px;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
 		max-width: 33%;
 		min-height: 33%;
-		padding: 5px;
 		border: solid 2px #943a06;
 	}
 	form.input > div > p {
 		font-size: 110%;
 		margin: 7px;
 		padding: 3px;
+		text-align: center;
 		color: #543b0a;
 		font-weight: 700;
+	}
+	input, textarea[placeholder] { 
+		font-size: 16px;
+		padding: 3px 7px;
+		font-weight: 600;
+		font-style: oblique;
 	}
 	form.input > div > p::first-letter {
 		font-size: 100%;
@@ -133,10 +142,19 @@ article, aside, details, figcaption, figure,
 		transition: all 1s ease; 
 		background-color: #f2e0bd;
 	}
+	.username > input:focus {
+		background-color: #d0f5f5;
+		border: solid 1px #db3712;
+		box-shadow: 0 0 3px 5px #32a8ed;
+		outline: none; 
+	}
 	.textarea > textarea {
 		border: solid 3px #0ec420;
 		max-width: 350px;
+		min-width: 70%;
 		max-height: 120px;
+		margin: 2% 16%;
+		color: #279fba;
 	}
 	.textarea > textarea:hover {
 		border: solid 3px #db3712;
@@ -144,21 +162,51 @@ article, aside, details, figcaption, figure,
 		background-color: #f2c1bd;
 	}
 	.textarea > textarea:focus {
-		border: solid 3px #1ec5eb;
+		border: solid 1px #ff9447;
 		background-color: #d0f5f5;
+		box-shadow: 0 0 3px 5px #32a8ed;
+		outline: none; 
+	}
+	.select {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center
 	}
 	.select > select {
-		
-	}
-	.select > button {
+		margin: 5px;
+		font-size: 15px;
+		font-family: sans-serif; 
 		font-weight: 700;
-		background-color: #f0a57a;
-		color: #057a3c;
-		border: dotted 2px #bd0d0d;
+		padding: 3px;
+		background: linear-gradient(#effa7d, #f07f4f);
+		border-radius: 5px; 
+		border: 1px solid #fc6c2d;
 	}
-	.select > button:hover {
-		background-color: #f07ac1;
+	select:focus {
+		box-shadow: 0 0 1px 3px #32a8ed;
+		outline: none; 
+} 
+	.button > button {
+		font-weight: 700;
+		font-size: 18px;
+		margin-top: 10px;
+		padding: 4px 8px;;
+		background: linear-gradient(#dff2f7 50%, #1db1de);
+		color: #f03a22;
+		border: solid 2px #bd0d0d;
+		border-radius: 5px;
+	}
+	.button > button:hover {
+		font-size: 22px;
 		transition: all 1s ease;
+		box-shadow: 5px 5px #634d4a;
+	}
+	.button > button:focus {
+		background: linear-gradient(#f7f265 50%, #1db1de);
+		transition: all 1s ease;
+		box-shadow: 0 0 1px 3px #32a8ed;
+		outline: none;
 	}
 /* main */
 	main {
