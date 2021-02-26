@@ -134,17 +134,17 @@ article, aside, details, figcaption, figure,
 		font-size: 100%;
 	}
 	.username > input {
-		border: solid 3px #0ec420;
+		border: solid 2px #0ec420;
 		height: 25px;
 	}
 	.username > input:hover {
-		border: solid 3px #db3712;
+		border: solid 2px #db3712;
 		transition: all 1s ease; 
 		background-color: #f2e0bd;
 	}
 	.username > input:focus {
 		background-color: #d0f5f5;
-		border: solid 1px #db3712;
+		border: solid 2px #db3712;
 		box-shadow: 0 0 3px 5px #32a8ed;
 		outline: none; 
 	}
@@ -162,16 +162,48 @@ article, aside, details, figcaption, figure,
 		background-color: #f2c1bd;
 	}
 	.textarea > textarea:focus {
-		border: solid 1px #ff9447;
+		border: solid 3px #ff9447;
 		background-color: #d0f5f5;
 		box-shadow: 0 0 3px 5px #32a8ed;
 		outline: none; 
+	}
+	.checkbox input[type="checkbox"]{
+		display: none;
+	}
+	.checkbox > label {
+		position: relative;
+		padding: 3px;
+		padding-left: 22px;
+	}
+	.checkbox > label:before {
+		content: " ";
+		position: absolute;
+		top: 2px;
+		left: 4px;
+		height: 13px;
+		width: 13px;
+		background-color: #5289f7;
+		border: solid 1px #11409e;
+	}
+	input[type="checkbox"]:checked + label:after {
+		content: " ";
+		position: absolute;
+		top: 1px;
+		left: 8px;
+		height: 9px;
+		width: 4px;
+		background-color: transparent;
+		border: solid 3px #fcfcfc;
+		border-left: none;
+		border-top: none;
+		transform: rotate(40deg);
 	}
 	.select {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		justify-content: center
+		justify-content: center;
+		position: relative;
 	}
 	.select > select {
 		margin: 5px;
@@ -186,7 +218,19 @@ article, aside, details, figcaption, figure,
 	select:focus {
 		box-shadow: 0 0 1px 3px #32a8ed;
 		outline: none; 
-} 
+	}
+	.select:after {
+		content: " ";
+		z-index: 5;
+		position: absolute;
+		height: 0;
+		width: 0;
+		bottom: 12px;
+		right: 18px;
+		border-top: solid 10px #7a1111;
+		border-left: solid 10px transparent;
+		border-right: solid 10px transparent;
+	}
 	.button > button {
 		font-weight: 700;
 		font-size: 18px;
