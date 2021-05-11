@@ -100,7 +100,7 @@ article, aside, details, figcaption, figure,
 		padding: 5px;
 		border: solid 2px #943a06;
 	}
-	form>a {
+	form > a {
 		color: #f26427;
 	}
 /* autorization отдельная страница */
@@ -126,7 +126,7 @@ article, aside, details, figcaption, figure,
 	}
 	input, textarea[placeholder] { 
 		font-size: 16px;
-		padding: 3px 7px;
+		padding: 7px 7px;
 		font-weight: 600;
 		font-style: oblique;
 	}
@@ -135,7 +135,6 @@ article, aside, details, figcaption, figure,
 	}
 	.username > input {
 		border: solid 2px #0ec420;
-		height: 25px;
 	}
 	.username > input:hover {
 		border: solid 2px #db3712;
@@ -206,6 +205,9 @@ article, aside, details, figcaption, figure,
 		position: relative;
 	}
 	.select > select {
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		appearance: none;
 		margin: 5px;
 		font-size: 15px;
 		font-family: sans-serif; 
@@ -225,8 +227,8 @@ article, aside, details, figcaption, figure,
 		position: absolute;
 		height: 0;
 		width: 0;
-		bottom: 12px;
-		right: 18px;
+		bottom: 15%;
+		right: 19%;
 		border-top: solid 10px #7a1111;
 		border-left: solid 10px transparent;
 		border-right: solid 10px transparent;
